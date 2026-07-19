@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { CATEGORIES } from '../../consts';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Only show category filters that actually have posts.
+const usedCategories = CATEGORIES.filter((c) =>
+  posts.some((p) => p.data.category === c.id)
+);
+---
+
+<BaseLayout title="Writing" description="Everything I've written — building, learning, work, and faith.">
+  <div class="wrap">
+    <header class="head">
+      <h1>Writing</h1>
+      <p class="muted">Notes, lessons, and things I've been working through.</p>
+    </header>
+
+    {
+      usedCategories.length > 0 && (
+        <nav class="filters" aria-label="Filter by category">
+          <a href="/blog" class="chip active">All</a>
+          {usedCategories.map((c) => (
+            <a href={`/categories/${c.id}`} class="chip">{c.label}</a>
+          ))}
+        </nav>
+      )
+    }
+
+    {
+      posts.length === 0 ? (
+        <p class="muted">No posts yet.</p>
+      ) : (
+        <div class="list">
+          {posts.map((post) => (
+            <PostCard
+              id={post.id}
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              category={post.data.category}
+            />
+          ))}
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .head { margin-bottom: var(--space-m); }
+  .head h1 { margin-bottom: var(--space-2xs); }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-m);
+  }
+  .chip {
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--fg-muted);
+    text-decoration: none;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+  }
+  .chip:hover { color: var(--fg); border-color: var(--fg-muted); }
+  .chip.active {
+    color: var(--accent-fg);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+</style>

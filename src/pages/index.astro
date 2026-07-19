@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { SITE_DESCRIPTION } from '../consts';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const recent = posts.slice(0, 5);
+---
+
+<BaseLayout>
+  <section class="wrap intro">
+    <p class="eyebrow">Keaton Wall</p>
+    <h1>Things worth writing down.</h1>
+    <p class="lead muted">
+      {SITE_DESCRIPTION} I write here about what I'm building, what I'm learning,
+      lessons from work and leadership, and the things that matter most.
+    </p>
+    <p class="cta"><a href="/blog">Read the writing →</a></p>
+  </section>
+
+  <section class="wrap">
+    <h2 class="section-title">Recent</h2>
+    {
+      recent.length === 0 ? (
+        <p class="muted">No posts yet — the first one is coming soon.</p>
+      ) : (
+        <div class="list">
+          {recent.map((post) => (
+            <PostCard
+              id={post.id}
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              category={post.data.category}
+            />
+          ))}
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>
+
+<style>
+  .intro {
+    padding-block: var(--space-l) var(--space-xl);
+    max-width: var(--measure);
+  }
+  .intro h1 {
+    font-size: var(--step-3);
+    margin-block: var(--space-2xs) var(--space-s);
+  }
+  .lead {
+    font-size: var(--step-1);
+    line-height: 1.45;
+  }
+  .cta {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    margin-top: var(--space-s);
+  }
+  .section-title {
+    font-family: var(--font-sans);
+    font-size: var(--step-0);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--fg-muted);
+    margin: 0 0 var(--space-2xs);
+    padding-bottom: var(--space-2xs);
+    border-bottom: 1px solid var(--border);
+  }
+</style>

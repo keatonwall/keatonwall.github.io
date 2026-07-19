@@ -1,0 +1,40 @@
+---
+import { categoryLabel } from '../consts';
+
+interface Props {
+  category: string;
+  href?: boolean;
+}
+const { category, href = true } = Astro.props;
+const label = categoryLabel(category);
+const url = `/categories/${category}`;
+---
+
+{
+  href ? (
+    <a class="badge" href={url} data-cat={category}>{label}</a>
+  ) : (
+    <span class="badge" data-cat={category}>{label}</span>
+  )
+}
+
+<style>
+  .badge {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--fg-muted);
+    text-decoration: none;
+    padding: 0.15rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    line-height: 1.4;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  a.badge:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+</style>

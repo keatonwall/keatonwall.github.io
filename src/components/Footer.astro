@@ -1,0 +1,33 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="wrap inner">
+    <span>© {year} Keaton Wall</span>
+    <span class="links">
+      <a href="/rss.xml">RSS</a>
+      <a href="https://github.com/keatonwall">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--border);
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    color: var(--fg-muted);
+    padding-block: var(--space-m);
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-s);
+    flex-wrap: wrap;
+  }
+  .links { display: flex; gap: var(--space-s); }
+  a { color: var(--fg-muted); text-decoration: none; }
+  a:hover { color: var(--fg); text-decoration: underline; }
+</style>

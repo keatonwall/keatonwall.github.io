@@ -1,0 +1,65 @@
+# Pages CMS configuration — https://pagescms.org
+# Field names/enums here MUST match the Zod schema in src/content.config.ts.
+
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/content/blog
+    filename: '{primary}.md'
+    view:
+      fields: [title, category, pubDate, draft]
+      primary: title
+      sort: [pubDate, title]
+      default:
+        sort: pubDate
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: text
+        description: One-sentence summary shown in listings and previews.
+      - name: pubDate
+        label: Published date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: updatedDate
+        label: Updated date
+        type: date
+        required: false
+        options:
+          format: yyyy-MM-dd
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - { value: tech, label: Tech & Building }
+            - { value: learning, label: Learning & Ideas }
+            - { value: work, label: Work & Leadership }
+            - { value: faith, label: Faith & Life }
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+        required: false
+      - name: heroImage
+        label: Hero image
+        type: image
+        required: false
+      - name: draft
+        label: Draft
+        type: boolean
+        default: false
+        description: Drafts are hidden from the live site.
+      - name: body
+        label: Body
+        type: rich-text
