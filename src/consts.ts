@@ -5,7 +5,7 @@ export const SITE_TITLE = 'Brick by Brick';
 // The person behind it (footer, home eyebrow, copyright).
 export const AUTHOR_NAME = 'Keaton Wall';
 export const SITE_DESCRIPTION =
-  'Notes on building, learning, work, and faith. Things worth writing down.';
+  'A place to keep what I learn. Tech, work, home projects, family, money, and everything in between.';
 export const SITE_URL = 'https://www.keatonwall.com';
 
 // The blog taxonomy. `id` is stored in frontmatter; `label` is shown in the UI.
