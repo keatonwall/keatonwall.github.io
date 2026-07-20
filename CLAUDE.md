@@ -66,6 +66,14 @@ whatever tags posts use. Nothing to maintain.
 - **Pushing** uses a token for the `keatonwall` account. The macOS keychain also
   holds a `keatonhs` (work) credential, which does NOT have access here. The
   remote embeds the username to avoid picking the wrong one.
+- **If a push fails with "Invalid username or token,"** the personal access
+  token expired or was regenerated. Regenerating changes the token value, so the
+  cached copy stops working. Git erases the bad credential on failure, which
+  means the next push needs to prompt for the new token. Claude's shell is
+  non-interactive and cannot answer that prompt, so **Keaton has to run
+  `git push origin main` once from his own terminal** (username `keatonwall`,
+  token as the password) to re-seed the keychain. After that Claude can push
+  again normally.
 
 ## Commands
 
