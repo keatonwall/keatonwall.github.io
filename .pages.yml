@@ -22,13 +22,16 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: description
         label: Description
         type: text
+        required: true
         description: One-sentence summary shown in listings and previews.
       - name: pubDate
         label: Published date
         type: date
+        required: true
         options:
           format: yyyy-MM-dd
       - name: updatedDate
@@ -40,6 +43,8 @@ content:
       - name: category
         label: Category
         type: select
+        required: true
+        default: learning
         options:
           values:
             - { value: tech, label: Tech & Building }
