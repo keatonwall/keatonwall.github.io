@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
+import { categoryLabel } from '../consts';
 
 interface Props {
   title: string;
@@ -17,7 +18,11 @@ const { title, description, pubDate, updatedDate, category, tags = [], heroImage
 ---
 
 <BaseLayout title={title} description={description}>
-  <article class="wrap">
+  <article
+    class="wrap"
+    data-pagefind-body
+    data-pagefind-filter={`Category:${categoryLabel(category)}`}
+  >
     <header class="post-header">
       <div class="meta">
         <CategoryBadge category={category} />
@@ -37,7 +42,13 @@ const { title, description, pubDate, updatedDate, category, tags = [], heroImage
     {
       tags.length > 0 && (
         <footer class="tags">
-          {tags.map((t) => <span class="tag">#{t}</span>)}
+          {
+            tags.map((t) => (
+              <a class="tag" href={`/tags/${t}`} data-pagefind-filter={`Tag:${t}`}>
+                #{t}
+              </a>
+            ))
+          }
         </footer>
       )
     }
@@ -84,6 +95,15 @@ const { title, description, pubDate, updatedDate, category, tags = [], heroImage
     font-family: var(--font-sans);
     font-size: var(--step--1);
     color: var(--fg-muted);
+    text-decoration: none;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tag:hover {
+    color: var(--accent);
+    border-color: var(--accent);
   }
   .back {
     margin-top: var(--space-l);

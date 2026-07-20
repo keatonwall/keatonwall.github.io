@@ -33,5 +33,7 @@ export function categoryLabel(id: string): string {
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Writing' },
+  { href: '/tags', label: 'Tags' },
+  { href: '/search', label: 'Search' },
   { href: '/about', label: 'About' },
 ];
