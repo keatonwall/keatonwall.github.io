@@ -43,9 +43,12 @@ content:
         options:
           values:
             - { value: tech, label: Tech & Building }
-            - { value: learning, label: Learning & Ideas }
             - { value: work, label: Work & Leadership }
+            - { value: home, label: Home & Yard }
+            - { value: family, label: Family & Relationships }
+            - { value: money, label: Money }
             - { value: faith, label: Faith & Life }
+            - { value: learning, label: Learning }
       - name: tags
         label: Tags
         type: string

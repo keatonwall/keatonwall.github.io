@@ -1,35 +1,45 @@
 ---
 title: 'Starting to write things down'
-description: 'Why I rebuilt this site as a blog, and what I plan to put here.'
+description: "Why I started this blog, and who I'm really writing it for."
 pubDate: 2026-07-19
 category: learning
-tags: ['meta', 'writing']
+tags: ['meta', 'family']
 draft: false
 ---
 
-For a long time this domain pointed at a single "Hello World" page. That felt
-like a waste, so I turned it into a place to actually write.
+I learn something worth keeping almost every week, and then I lose it. A fix for
+a problem in the yard. A lesson from a hard conversation at work. A better way
+to think about money. It lands, I use it once, and six months later it's gone.
 
-The idea is simple. When I learn something worth keeping, or build something I
-had to figure out the hard way, I'll write it down here. Not because the world
-needs another blog, but because writing forces me to actually understand a
-thing. And every so often someone else is stuck on the same problem I just
-solved.
+So I'm putting it all in one place.
 
-## What you'll find here
+That's the practical reason. Here's the real one.
 
-I care about a few different things, and they won't always line up neatly:
+## This is for my kids
 
-- **Tech & building.** The actual work of making software and systems.
-- **Learning & ideas.** Things I'm chewing on, half formed and otherwise.
-- **Work & leadership.** Lessons that only show up once you're responsible for
-  outcomes and people.
-- **Faith & life.** The part that gives the rest its meaning.
+Someday my kids are going to run into a lot of the same things I've run into.
+Not exactly the same, but close enough. I'd rather they have a record of what I
+actually learned than have to guess at it, or wait around for me to remember to
+bring it up at the right moment.
 
-That's a wide range on purpose. This is a personal site, not a niche.
+I'm not writing this expecting them to agree with all of it. I hope they read
+through it, take the parts that are useful to them, and leave the rest. That's
+how it should work. What matters to me is that it's here when they want it.
 
-> The best time to plant a tree was twenty years ago. The second best time is now.
+And if any of it helps someone else along the way, even better.
 
-If any of it is useful to you, that's a bonus. Mostly, I'm writing to think.
+## What goes here
 
-*(This is an example post. Feel free to delete it once you've written your own.)*
+Honestly, whatever I learn:
+
+- Tech and the things I'm building
+- Work and leadership
+- Lawn and home projects
+- Family and relationships
+- Money and finance
+- Random things I don't want to forget
+
+There's no real end to that list. If I learned it and thought it was worth
+keeping, it goes here.
+
+Brick by brick.

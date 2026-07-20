@@ -13,9 +13,12 @@ export const SITE_URL = 'https://www.keatonwall.com';
 // and the select options in .pages.yml.
 export const CATEGORIES = [
   { id: 'tech', label: 'Tech & Building' },
-  { id: 'learning', label: 'Learning & Ideas' },
   { id: 'work', label: 'Work & Leadership' },
+  { id: 'home', label: 'Home & Yard' },
+  { id: 'family', label: 'Family & Relationships' },
+  { id: 'money', label: 'Money' },
   { id: 'faith', label: 'Faith & Life' },
+  { id: 'learning', label: 'Learning' },
 ] as const;
 
 export type CategoryId = (typeof CATEGORIES)[number]['id'];
