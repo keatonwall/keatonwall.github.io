@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
-import { SITE_DESCRIPTION } from '../consts';
+import { AUTHOR_NAME } from '../consts';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -12,7 +12,7 @@ const recent = posts.slice(0, 5);
 
 <BaseLayout>
   <section class="wrap intro">
-    <p class="eyebrow">Keaton Wall</p>
+    <p class="eyebrow">{AUTHOR_NAME}</p>
     <h1>Things worth writing down.</h1>
     <p class="lead muted">
       I'm Keaton. I write about what I'm building, what I'm learning, and the

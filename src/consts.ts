@@ -1,6 +1,9 @@
 // Site-wide metadata and shared constants.
 
-export const SITE_TITLE = 'Keaton Wall';
+// The site/brand name (header wordmark, page titles, RSS).
+export const SITE_TITLE = 'Brick by Brick';
+// The person behind it (footer, home eyebrow, copyright).
+export const AUTHOR_NAME = 'Keaton Wall';
 export const SITE_DESCRIPTION =
   'Notes on building, learning, work, and faith. Things worth writing down.';
 export const SITE_URL = 'https://www.keatonwall.com';
