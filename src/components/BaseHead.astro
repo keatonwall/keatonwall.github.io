@@ -9,7 +9,7 @@ interface Props {
 
 const { title, description, image = '/og-default.png' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const pageTitle = title === SITE_TITLE ? title : `${title} — ${SITE_TITLE}`;
+const pageTitle = title === SITE_TITLE ? title : `${title} | ${SITE_TITLE}`;
 ---
 
 <meta charset="utf-8" />

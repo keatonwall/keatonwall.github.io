@@ -2,7 +2,7 @@
 
 export const SITE_TITLE = 'Keaton Wall';
 export const SITE_DESCRIPTION =
-  'Notes on building, learning, work, and faith — things worth writing down.';
+  'Notes on building, learning, work, and faith. Things worth writing down.';
 export const SITE_URL = 'https://www.keatonwall.com';
 
 // The blog taxonomy. `id` is stored in frontmatter; `label` is shown in the UI.

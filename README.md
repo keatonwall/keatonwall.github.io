@@ -7,11 +7,11 @@ on GitHub Pages at [www.keatonwall.com](https://www.keatonwall.com).
 
 Two ways:
 
-1. **In the browser (no code)** — via [Pages CMS](https://pagescms.org). Log in
+1. **In the browser (no code)**, via [Pages CMS](https://pagescms.org). Log in
    with GitHub at [app.pagescms.org](https://app.pagescms.org), pick this repo,
    and write. Saving commits a Markdown file to `src/content/blog/` and the site
    rebuilds automatically.
-2. **Locally** — add a Markdown file to `src/content/blog/`. Frontmatter fields:
+2. **Locally**, add a Markdown file to `src/content/blog/`. Frontmatter fields:
 
    ```yaml
    ---
@@ -33,6 +33,16 @@ npm run dev      # http://localhost:4321
 npm run build    # output to ./dist
 npm run preview  # preview the production build
 ```
+
+## Writing voice
+
+Site copy and posts should sound like Keaton: warm, direct, plain language,
+contractions, and a clear "why" behind things.
+
+- **Never use em dashes (—).** Hard rule. Use periods, commas, parentheses, or
+  hyphens for ranges instead.
+- Short readable sentences over long compound ones. No corporate jargon.
+- Explain the reasoning, don't just state the conclusion.
 
 ## How it's wired
 

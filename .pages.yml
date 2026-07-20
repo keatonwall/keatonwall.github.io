@@ -1,4 +1,4 @@
-# Pages CMS configuration — https://pagescms.org
+# Pages CMS configuration: https://pagescms.org
 # Field names/enums here MUST match the Zod schema in src/content.config.ts.
 
 media:

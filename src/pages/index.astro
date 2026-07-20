@@ -15,8 +15,9 @@ const recent = posts.slice(0, 5);
     <p class="eyebrow">Keaton Wall</p>
     <h1>Things worth writing down.</h1>
     <p class="lead muted">
-      {SITE_DESCRIPTION} I write here about what I'm building, what I'm learning,
-      lessons from work and leadership, and the things that matter most.
+      I'm Keaton. I write about what I'm building, what I'm learning, and the
+      lessons that show up along the way (work, leadership, faith, and family).
+      If something here saves you time or trouble, that's a win.
     </p>
     <p class="cta"><a href="/blog">Read the writing →</a></p>
   </section>
@@ -25,7 +26,7 @@ const recent = posts.slice(0, 5);
     <h2 class="section-title">Recent</h2>
     {
       recent.length === 0 ? (
-        <p class="muted">No posts yet — the first one is coming soon.</p>
+        <p class="muted">No posts yet. The first one is coming soon.</p>
       ) : (
         <div class="list">
           {recent.map((post) => (
