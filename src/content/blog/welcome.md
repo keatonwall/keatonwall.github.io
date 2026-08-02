@@ -45,5 +45,3 @@ Honestly, whatever I learn:
 
 There's no real end to that list. If I learned it and thought it was worth
 keeping, it goes here.
-
-Brick by brick.
