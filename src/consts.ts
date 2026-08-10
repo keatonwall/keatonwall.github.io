@@ -15,6 +15,8 @@ export const CATEGORIES = [
   { id: 'tech', label: 'Tech & Building' },
   { id: 'work', label: 'Work & Leadership' },
   { id: 'home', label: 'Home & Yard' },
+  { id: 'recipes', label: 'Recipes' },
+  { id: 'food-travel', label: 'Food & Travel' },
   { id: 'family', label: 'Family & Relationships' },
   { id: 'money', label: 'Money' },
   { id: 'faith', label: 'Faith & Life' },

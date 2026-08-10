@@ -46,8 +46,9 @@ heroImage: /images/optional.jpg
 draft: false          # true hides it from the live site
 ```
 
-**Categories** are a fixed list of seven, defined once in `src/consts.ts`:
-`tech`, `work`, `home`, `family`, `money`, `faith`, `learning`.
+**Categories** are a fixed list, defined once in `src/consts.ts`:
+`tech`, `work`, `home`, `recipes`, `food-travel`, `family`, `money`, `faith`,
+`learning`.
 
 Changing categories means updating **both** `src/consts.ts` and `.pages.yml`,
 or the CMS dropdown and the site schema drift apart.

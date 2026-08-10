@@ -50,6 +50,8 @@ content:
             - { value: tech, label: Tech & Building }
             - { value: work, label: Work & Leadership }
             - { value: home, label: Home & Yard }
+            - { value: recipes, label: Recipes }
+            - { value: food-travel, label: Food & Travel }
             - { value: family, label: Family & Relationships }
             - { value: money, label: Money }
             - { value: faith, label: Faith & Life }
