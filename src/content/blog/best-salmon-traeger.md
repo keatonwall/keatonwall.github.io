@@ -1,5 +1,5 @@
 ---
-title: 'The best salmon I have made, with rice pilaf and grilled asparagus'
+title: 'The best salmon I have made, with rice pilaf, grilled asparagus, and blistered shishito peppers'
 description: 'Traeger salmon with Malibu seasoning and lemon, a rice pilaf done with beef stock, and parmesan asparagus off the gas grill.'
 pubDate: 2026-08-10
 category: recipes
