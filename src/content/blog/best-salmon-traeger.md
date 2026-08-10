@@ -10,8 +10,8 @@ draft: false
 I've made a lot of salmon. This was the best of it, so I'm writing down exactly
 what I did before I forget the details and can't repeat it.
 
-The whole meal was salmon on the Traeger, a rice pilaf, and grilled asparagus.
-All three below.
+The whole meal was salmon on the Traeger, a rice pilaf, grilled asparagus, and
+blistered shishito peppers. All of it below.
 
 ## The salmon
 
@@ -79,6 +79,17 @@ Done on a regular gas grill, not the Traeger.
 - Put the asparagus in a gallon bag with **1/4 cup lemon juice, 1/2 cup shredded
   parmesan, and 1/8 cup olive oil.** Toss to coat.
 - Grill over **low heat on the top rack for 15 minutes.**
+
+## Blistered shishito peppers
+
+These were the surprise of the night. So good, and about the easiest thing on
+the table.
+
+- Heat a pan over **medium.**
+- Spritz in a little **avocado oil** and season with **garlic salt.**
+- Add the shishitos and cook until they blister, tossing now and then.
+- Spritz **fresh lime juice** over the top right at the end.
+- Eat them right away, while they're hot. That's when they're best.
 
 ## Notes for next time
 
