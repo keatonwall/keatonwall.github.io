@@ -28,10 +28,13 @@ All three below.
   Hickory, Maple, and Cherry blend.
 - Put the salmon on (still on the foil) and cook **34 minutes, untouched.** No
   flipping, no checking, no poking.
+- Pull it at **135F in the thickest part.** That was the perfect doneness for
+  this cook, moist and just flaky.
 
 My fillet was about 1 to 1.5 inches thick in the center and tapered thinner
-toward the sides. If yours is thicker or thinner, the time will move, but 34
-minutes was right for this one.
+toward the sides. The 34 minutes got it to 135F for this fillet, but thickness
+is what really drives it, so go by temperature over time. A cheap probe
+thermometer takes the guessing out of it.
 
 The untouched part matters. Leaving it alone is what gave it that even, flaky
 finish.
