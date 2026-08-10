@@ -1,6 +1,6 @@
 ---
 title: 'The best salmon I have made, with rice pilaf, grilled asparagus, and blistered shishito peppers'
-description: 'Traeger salmon with Malibu seasoning and lemon, a rice pilaf done with beef stock, and parmesan asparagus off the gas grill.'
+description: 'Traeger salmon with Malibu seasoning and lemon, rice pilaf with beef stock, parmesan asparagus off the grill, and blistered shishito peppers.'
 pubDate: 2026-08-10
 category: recipes
 tags: ['recipe', 'salmon', 'traeger', 'grilling', 'dinner']
@@ -97,6 +97,6 @@ the table.
 - The heavy lemon on the salmon, both the juice and the sliced lemons on top, is
   a big part of why it was so good. Don't go light on it.
 - Beef stock in the pilaf over chicken broth is a keeper.
-- Everything finished around the same time, which was lucky more than planned.
-  The salmon runs 34 minutes and the pilaf 25 to 30, so start the salmon first,
-  then the pilaf, then the asparagus last.
+- On timing: the salmon runs 34 minutes and the pilaf 25 to 30, so start the
+  salmon first, then the pilaf, then the asparagus. Do the shishitos last, right
+  before eating, since they're quick and best straight out of the pan.
