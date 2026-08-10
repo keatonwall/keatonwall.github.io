@@ -47,7 +47,8 @@ in case that page ever disappears. **My one change: I used beef stock instead of
 chicken broth.** It's a deeper, richer flavor and it's what made this side stand
 out.
 
-Serves 4. About 10 minutes of hands-on time, 50 minutes total.
+The recipe says it serves 4, but it stretched to feed 6 for us as a side. About
+10 minutes of hands-on time, 50 minutes total.
 
 **Ingredients:**
 
