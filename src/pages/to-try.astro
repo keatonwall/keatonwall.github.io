@@ -1,10 +1,18 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
 const recipes = (await getCollection('toTry')).sort(
   (a, b) => b.data.addedDate.valueOf() - a.data.addedDate.valueOf()
+);
+// Saved copies of the recipe text (the Markdown body), in case the source goes away.
+const saved = new Map(
+  await Promise.all(
+    recipes
+      .filter((r) => r.body?.trim())
+      .map(async (r) => [r.id, (await render(r)).Content] as const)
+  )
 );
 const upNext = recipes.filter((r) => !r.data.tried);
 const tried = recipes.filter((r) => r.data.tried);
@@ -43,7 +51,9 @@ const sections = [
             <p class="muted">{s.empty}</p>
           ) : (
             <ul class="list">
-              {s.items.map(({ data }) => (
+              {s.items.map(({ id, data }) => {
+                const Saved = saved.get(id);
+                return (
                 <li class="item">
                   <h3>
                     {data.url ? <a href={data.url} rel="noopener">{data.title}</a> : data.title}
@@ -58,8 +68,15 @@ const sections = [
                     )}
                   </p>
                   {data.note && <p class="note">{data.note}</p>}
+                  {Saved && (
+                    <details class="recipe">
+                      <summary>Recipe</summary>
+                      <div class="prose"><Saved /></div>
+                    </details>
+                  )}
                 </li>
-              ))}
+                );
+              })}
             </ul>
           )}
         </section>
@@ -103,4 +120,19 @@ const sections = [
     color: var(--fg-muted);
   }
   .note { margin: var(--space-2xs) 0 0; font-size: var(--step-0); }
+  .recipe { margin-top: var(--space-2xs); }
+  .recipe summary {
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .recipe .prose {
+    margin-top: var(--space-s);
+    padding: var(--space-s) var(--space-m);
+    background: var(--bg-subtle);
+    border-radius: 6px;
+  }
+  .recipe .prose :global(h3) { font-size: var(--step-0); }
 </style>

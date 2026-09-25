@@ -121,3 +121,8 @@ content:
         type: string
         required: false
         description: If you wrote about it, the post's file name without .md (e.g. best-salmon-traeger).
+      - name: body
+        label: Saved recipe
+        type: rich-text
+        required: false
+        description: Paste the ingredients and steps here in case the original page goes away.
