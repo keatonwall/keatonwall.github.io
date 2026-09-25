@@ -73,3 +73,51 @@ content:
       - name: body
         label: Body
         type: rich-text
+
+  - name: toTry
+    label: Recipes to Try
+    type: collection
+    path: src/content/to-try
+    filename: '{primary}.md'
+    view:
+      fields: [title, source, addedDate, tried]
+      primary: title
+      sort: [addedDate, title]
+      default:
+        sort: addedDate
+        order: desc
+    fields:
+      - name: title
+        label: Recipe
+        type: string
+        required: true
+      - name: url
+        label: Link
+        type: string
+        required: false
+        description: Full link to the recipe (https://...).
+      - name: source
+        label: Source
+        type: string
+        required: false
+        description: Where it's from, e.g. NYT Cooking, Mom, a cookbook.
+      - name: note
+        label: Why I want to try it
+        type: text
+        required: false
+      - name: addedDate
+        label: Date added
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: tried
+        label: Tried
+        type: boolean
+        default: false
+        description: Check once you've made it. It moves to the Tried list.
+      - name: post
+        label: Write-up post slug
+        type: string
+        required: false
+        description: If you wrote about it, the post's file name without .md (e.g. best-salmon-traeger).

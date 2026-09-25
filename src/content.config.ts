@@ -20,4 +20,20 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+// Recipes I want to try. Frontmatter only, one file per recipe, managed in
+// Pages CMS. Keep fields in sync with the `toTry` collection in .pages.yml.
+const toTry = defineCollection({
+  loader: glob({ base: './src/content/to-try', pattern: '**/*.md' }),
+  schema: z.object({
+    title: z.string(),
+    url: z.string().url().optional(),
+    source: z.string().optional(),
+    note: z.string().optional(),
+    addedDate: z.coerce.date(),
+    tried: z.boolean().default(false),
+    // Slug of the blog post written about it, e.g. best-salmon-traeger.
+    post: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, toTry };

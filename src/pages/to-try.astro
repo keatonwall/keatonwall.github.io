@@ -1,0 +1,106 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const recipes = (await getCollection('toTry')).sort(
+  (a, b) => b.data.addedDate.valueOf() - a.data.addedDate.valueOf()
+);
+const upNext = recipes.filter((r) => !r.data.tried);
+const tried = recipes.filter((r) => r.data.tried);
+
+// Only link a write-up if the post exists and is published.
+const postIds = new Set(
+  (await getCollection('blog', ({ data }) => !data.draft)).map((p) => p.id)
+);
+const sections = [
+  { heading: 'Up next', items: upNext, empty: 'Nothing on the list right now.' },
+  { heading: 'Tried', items: tried, empty: "Haven't crossed any off yet." },
+];
+---
+
+<BaseLayout
+  title="Recipes to Try"
+  description="Recipes I've saved and want to make. Once I try one, it moves down to the Tried list."
+>
+  <div class="wrap">
+    <header class="head">
+      <h1>Recipes to Try</h1>
+      <p class="muted">
+        Recipes I've saved and want to make. Once I try one, it moves down to
+        Tried. The ones worth writing about end up in
+        <a href="/categories/recipes">Recipes</a>.
+      </p>
+    </header>
+
+    {
+      sections.map((s) => (
+        <section>
+          <h2>
+            {s.heading} <span class="count">{s.items.length}</span>
+          </h2>
+          {s.items.length === 0 ? (
+            <p class="muted">{s.empty}</p>
+          ) : (
+            <ul class="list">
+              {s.items.map(({ data }) => (
+                <li class="item">
+                  <h3>
+                    {data.url ? <a href={data.url} rel="noopener">{data.title}</a> : data.title}
+                  </h3>
+                  <p class="meta">
+                    {data.source && <span>{data.source}</span>}
+                    <span>
+                      Added <FormattedDate date={data.addedDate} />
+                    </span>
+                    {data.post && postIds.has(data.post) && (
+                      <a href={`/blog/${data.post}`}>Read my write-up</a>
+                    )}
+                  </p>
+                  {data.note && <p class="note">{data.note}</p>}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .head { margin-bottom: var(--space-l); }
+  .head h1 { margin-bottom: var(--space-2xs); }
+  section + section { margin-top: var(--space-xl); }
+  h2 {
+    font-size: var(--step-1);
+    margin-bottom: var(--space-2xs);
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2xs);
+  }
+  .count {
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--fg-muted);
+  }
+  .list { list-style: none; padding: 0; margin: 0; }
+  .item {
+    padding-block: var(--space-s);
+    border-bottom: 1px solid var(--border);
+  }
+  h3 { margin: 0 0 var(--space-2xs); font-size: var(--step-0); }
+  h3 a { color: var(--fg); text-decoration: none; }
+  h3 a:hover { color: var(--accent); }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem var(--space-s);
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    color: var(--fg-muted);
+  }
+  .note { margin: var(--space-2xs) 0 0; font-size: var(--step-0); }
+</style>

@@ -56,6 +56,15 @@ or the CMS dropdown and the site schema drift apart.
 **Tags** are freeform. Tag pages and the `/tags` index generate themselves from
 whatever tags posts use. Nothing to maintain.
 
+## Recipes to Try
+
+`/to-try` lists recipes Keaton wants to make. One frontmatter-only Markdown file
+per recipe in `src/content/to-try/` (schema: `toTry` in `src/content.config.ts`,
+CMS: "Recipes to Try" in `.pages.yml`, keep them in sync). Fields: `title`,
+`url`, `source`, `note`, `addedDate`, `tried` (boolean, moves it to the Tried
+list), `post` (slug of a write-up). Strip tracking params (utm_*, _kx, etc.)
+from recipe links before saving.
+
 ## Gotchas
 
 - **`public/CNAME`** holds the custom domain. If it's lost, the domain breaks.
