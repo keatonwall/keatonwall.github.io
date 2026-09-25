@@ -62,7 +62,7 @@ whatever tags posts use. Nothing to maintain.
 per recipe in `src/content/to-try/` (schema: `toTry` in `src/content.config.ts`,
 CMS: "Recipes to Try" in `.pages.yml`, keep them in sync). Fields: `title`,
 `url`, `source`, `note`, `addedDate`, `tried` (boolean, moves it to the Tried
-list), `post` (slug of a write-up). Strip tracking params (utm_*, _kx, etc.)
+list), `post` (slug of a write-up). The Markdown body is an optional saved copy of the recipe, shown in a Recipe toggle. Strip tracking params (utm_*, _kx, etc.)
 from recipe links before saving.
 
 ## Gotchas
