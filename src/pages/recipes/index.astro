@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import RecipeTabs from '../../components/RecipeTabs.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+// Tried and True: recipe write-ups (blog posts in the `recipes` category),
+// plus saved recipes marked tried that don't have a write-up yet.
+const posts = (
+  await getCollection('blog', ({ data }) => !data.draft && data.category === 'recipes')
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const postIds = new Set(posts.map((p) => p.id));
+
+const saved = await getCollection('toTry');
+const toTryCount = saved.filter((r) => !r.data.tried).length;
+const triedNoPost = saved
+  .filter((r) => r.data.tried && !(r.data.post && postIds.has(r.data.post)))
+  .sort((a, b) => b.data.addedDate.valueOf() - a.data.addedDate.valueOf());
+---
+
+<BaseLayout title="Recipes" description="Recipes I've made and love, plus the ones I've saved to try.">
+  <div class="wrap">
+    <header class="head">
+      <h1>Recipes</h1>
+      <p class="muted">The ones I've made and keep coming back to.</p>
+    </header>
+
+    <RecipeTabs active="tried" counts={{ tried: posts.length + triedNoPost.length, toTry: toTryCount }} />
+
+    {
+      posts.length === 0 && triedNoPost.length === 0 ? (
+        <p class="muted">No recipes yet.</p>
+      ) : (
+        <div class="list">
+          {posts.map((post) => (
+            <PostCard
+              id={post.id}
+              title={post.data.title}
+              description={post.data.description}
+              pubDate={post.data.pubDate}
+              category={post.data.category}
+            />
+          ))}
+          {triedNoPost.map(({ data }) => (
+            <article class="tried">
+              <h2>{data.url ? <a href={data.url} rel="noopener">{data.title}</a> : data.title}</h2>
+              <p class="meta">
+                {data.source && <span>{data.source}</span>}
+                <span>Added <FormattedDate date={data.addedDate} /></span>
+              </p>
+              {data.note && <p class="note">{data.note}</p>}
+            </article>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .head { margin-bottom: var(--space-s); }
+  .head h1 { margin-bottom: var(--space-2xs); }
+  .tried { padding-block: var(--space-s); border-bottom: 1px solid var(--border); }
+  .tried h2 { font-size: var(--step-1); margin: 0 0 var(--space-2xs); }
+  .tried h2 a { color: var(--fg); text-decoration: none; }
+  .tried h2 a:hover { color: var(--accent); }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem var(--space-s);
+    margin: 0;
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    color: var(--fg-muted);
+  }
+  .note { margin: var(--space-2xs) 0 0; }
+</style>

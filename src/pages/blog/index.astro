@@ -4,7 +4,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { CATEGORIES } from '../../consts';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+// Recipes have their own tab (/recipes), so Writing leaves them out.
+const posts = (
+  await getCollection('blog', ({ data }) => !data.draft && data.category !== 'recipes')
+).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
@@ -14,7 +17,7 @@ const usedCategories = CATEGORIES.filter((c) =>
 );
 ---
 
-<BaseLayout title="Writing" description="Everything I've written: building, learning, work, and faith.">
+<BaseLayout title="Writing" description="What I've written about building, learning, work, and faith. Recipes live under Recipes.">
   <div class="wrap">
     <header class="head">
       <h1>Writing</h1>

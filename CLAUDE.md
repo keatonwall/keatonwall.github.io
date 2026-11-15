@@ -56,13 +56,20 @@ or the CMS dropdown and the site schema drift apart.
 **Tags** are freeform. Tag pages and the `/tags` index generate themselves from
 whatever tags posts use. Nothing to maintain.
 
-## Recipes to Try
+## Recipes
 
-`/to-try` lists recipes Keaton wants to make. One frontmatter-only Markdown file
+The **Recipes** nav tab (`src/pages/recipes/`) has two sub-tabs (`RecipeTabs.astro`):
+**Tried and True** (`/recipes`: blog posts with `category: recipes`, plus saved
+recipes marked `tried` that have no write-up) and **To Try** (`/recipes/to-try`:
+saved recipes not yet tried). Writing (`/blog`) leaves out the `recipes` category.
+`/to-try` redirects to `/recipes/to-try` (astro.config.mjs).
+
+### Recipes to Try
+
+`/recipes/to-try` lists recipes Keaton wants to make. One frontmatter-only Markdown file
 per recipe in `src/content/to-try/` (schema: `toTry` in `src/content.config.ts`,
 CMS: "Recipes to Try" in `.pages.yml`, keep them in sync). Fields: `title`,
-`url`, `source`, `note`, `addedDate`, `tried` (boolean, moves it to the Tried
-list), `post` (slug of a write-up). The Markdown body is an optional saved copy of the recipe, shown in a Recipe toggle. Strip tracking params (utm_*, _kx, etc.)
+`url`, `source`, `note`, `addedDate`, `tried` (boolean, moves it to Tried and True), `post` (slug of a write-up). The Markdown body is an optional saved copy of the recipe, shown in a Recipe toggle. Strip tracking params (utm_*, _kx, etc.)
 from recipe links before saving.
 
 ## Gotchas

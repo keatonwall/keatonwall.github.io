@@ -1,0 +1,52 @@
+---
+// Sub-tabs shown at the top of the Recipes section.
+interface Props {
+  active: 'tried' | 'to-try';
+  counts?: { tried: number; toTry: number };
+}
+const { active, counts } = Astro.props;
+const tabs = [
+  { id: 'tried', href: '/recipes', label: 'Tried and True', count: counts?.tried },
+  { id: 'to-try', href: '/recipes/to-try', label: 'To Try', count: counts?.toTry },
+] as const;
+---
+
+<nav class="tabs" aria-label="Recipes">
+  {
+    tabs.map((t) => (
+      <a href={t.href} class:list={['chip', { active: t.id === active }]} aria-current={t.id === active ? 'page' : undefined}>
+        {t.label}
+        {t.count !== undefined && <span class="count">{t.count}</span>}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    margin-bottom: var(--space-m);
+  }
+  .chip {
+    font-family: var(--font-sans);
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--fg-muted);
+    text-decoration: none;
+    padding: 0.2rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    display: inline-flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .chip:hover { color: var(--fg); border-color: var(--fg-muted); }
+  .chip.active {
+    color: var(--accent-fg);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .count { font-weight: 500; opacity: 0.8; }
+</style>

@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import RecipeTabs from '../../components/RecipeTabs.astro';
 
 const recipes = (await getCollection('toTry')).sort(
   (a, b) => b.data.addedDate.valueOf() - a.data.addedDate.valueOf()
@@ -21,25 +22,31 @@ const tried = recipes.filter((r) => r.data.tried);
 const postIds = new Set(
   (await getCollection('blog', ({ data }) => !data.draft)).map((p) => p.id)
 );
+// Tried ones move to the Tried and True tab (/recipes).
+const recipePosts = (
+  await getCollection('blog', ({ data }) => !data.draft && data.category === 'recipes')
+).map((p) => p.id);
+const triedCount =
+  recipePosts.length + tried.filter((r) => !(r.data.post && recipePosts.includes(r.data.post))).length;
 const sections = [
   { heading: 'Up next', items: upNext, empty: 'Nothing on the list right now.' },
-  { heading: 'Tried', items: tried, empty: "Haven't crossed any off yet." },
 ];
 ---
 
 <BaseLayout
   title="Recipes to Try"
-  description="Recipes I've saved and want to make. Once I try one, it moves down to the Tried list."
+  description="Recipes I've saved and want to make. Once I make one I love, it moves to Tried and True."
 >
   <div class="wrap">
     <header class="head">
-      <h1>Recipes to Try</h1>
+      <h1>Recipes</h1>
       <p class="muted">
-        Recipes I've saved and want to make. Once I try one, it moves down to
-        Tried. The ones worth writing about end up in
-        <a href="/categories/recipes">Recipes</a>.
+        Saved recipes I want to make. Once I try one and love it, it moves to
+        Tried and True.
       </p>
     </header>
+
+    <RecipeTabs active="to-try" counts={{ tried: triedCount, toTry: upNext.length }} />
 
     {
       sections.map((s) => (
@@ -86,7 +93,7 @@ const sections = [
 </BaseLayout>
 
 <style>
-  .head { margin-bottom: var(--space-l); }
+  .head { margin-bottom: var(--space-s); }
   .head h1 { margin-bottom: var(--space-2xs); }
   section + section { margin-top: var(--space-xl); }
   h2 {

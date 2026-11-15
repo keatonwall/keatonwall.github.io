@@ -6,6 +6,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.keatonwall.com',
   integrations: [sitemap()],
+  // Recipes to Try moved under the Recipes tab.
+  redirects: { '/to-try': '/recipes/to-try' },
   markdown: {
     shikiConfig: {
       // Light + dark code themes; CSS in global.css toggles between them.
