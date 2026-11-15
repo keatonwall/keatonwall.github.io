@@ -4,7 +4,7 @@ description: 'One bowl, melted butter, no mixer, no chilling. About 20 minutes f
 pubDate: 2026-11-15
 category: recipes
 tags: ['recipe', 'cookies', 'dessert', 'baking', 'chocolate']
-draft: true
+draft: false
 ---
 
 I've made these and I love them. They're the cookies I'd make on a weeknight

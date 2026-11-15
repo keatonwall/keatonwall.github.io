@@ -4,6 +4,7 @@ url: https://www.ihearteating.com/easiest-chocolate-chip-cookie-recipe/
 source: I Heart Eating
 addedDate: 2026-11-15
 tried: true
+post: easiest-chocolate-chip-cookies
 ---
 
 Saved in case the original page goes away. One bowl, no mixer, no chilling. Makes about 24 cookies in under 20 minutes (10 minutes of prep, 7-10 in the oven).
