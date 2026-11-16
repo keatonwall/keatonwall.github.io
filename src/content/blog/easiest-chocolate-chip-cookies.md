@@ -18,7 +18,7 @@ Here's how I make it.
 
 ## Ingredients
 
-Makes 12 big cookies.
+Makes 11 big cookies.
 
 - ½ cup butter (salted or unsalted)
 - ½ cup granulated sugar
@@ -45,17 +45,17 @@ Makes 12 big cookies.
 
 ## Bake
 
-Weigh out **68g** of dough per cookie (that's 12 big ones) and
+Weigh out **68g** of dough per cookie (that's 11 big ones) and
 space them 2 inches apart. Bake **9-11 minutes**, until the tops are slightly
 golden brown.
 
 ## Macros
 
-Estimated per cookie (68g of dough, 12 cookies):
+Estimated per cookie (68g of dough, 11 cookies):
 
 | Calories | Protein | Carbs | Fat |
 |---|---|---|---|
-| ~250 | 3g | 35g (about 4g fiber) | 12g |
+| ~270 | 4g | 39g (about 4g fiber) | 13g |
 
 These are estimates from standard nutrition data for each ingredient and the
 labels on the Lily's chips, so treat them as ballpark numbers.
