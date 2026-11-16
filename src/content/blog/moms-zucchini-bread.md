@@ -25,7 +25,7 @@ Makes 2 (8x4-inch) loaves, 24 slices.
 - 1 teaspoon baking powder
 - 1 teaspoon baking soda
 - 2 cups white sugar
-- 1 cup coconut oil
+- 1 cup coconut oil, melted
 - 3 large eggs
 - 1 tablespoon vanilla extract
 - 2 cups shredded zucchini
@@ -34,7 +34,7 @@ Makes 2 (8x4-inch) loaves, 24 slices.
 
 1. Heat the oven to **325°F.** Grease and flour two 8x4-inch loaf pans.
 2. Sift the flour, cinnamon, salt, baking powder, and baking soda together.
-3. In another bowl, beat the sugar, oil, eggs, and vanilla until combined. Add
+3. In another bowl, beat the sugar, melted coconut oil, eggs, and vanilla until combined. Add
    the flour mixture and beat well.
 4. Stir in the zucchini.
 5. Pour the batter into the pans and bake **40-60 minutes**, until a toothpick

@@ -13,7 +13,7 @@ don't want a whole batch sitting around.
 
 The recipe comes from Joanie at
 [One Dish Kitchen](https://onedishkitchen.com/deep-dish-chocolate-chip-cookie-for-one/).
-I make it as written.
+I make it as written, minus the nuts.
 
 ## Ingredients
 
@@ -28,7 +28,6 @@ Makes 1 cookie, baked in a 10-ounce ramekin.
 - ⅛ teaspoon baking soda
 - ⅛ teaspoon salt
 - ¼ cup chocolate chips
-- 2 tablespoons chopped pecans or walnuts
 
 ## Steps
 
@@ -37,7 +36,7 @@ Makes 1 cookie, baked in a 10-ounce ramekin.
 3. Beat in the egg yolk and vanilla.
 4. Stir in the flour, baking soda, and salt **just** until the dough comes
    together.
-5. Fold in the chocolate chips and nuts.
+5. Fold in the chocolate chips.
 6. Butter a 10-ounce ramekin and press the dough in evenly.
 7. Bake **22-25 minutes**, until the top is golden and the edges are set. The
    center will still look soft.
@@ -49,11 +48,10 @@ Estimated for the whole cookie (1 serving):
 
 | Calories | Protein | Carbs | Fat |
 |---|---|---|---|
-| ~860 | 10g | 101g (about 5g fiber) | 50g |
+| ~770 | 9g | 99g (about 4g fiber) | 41g |
 
 These are estimates from standard nutrition data for each ingredient, assuming
-semisweet chips and pecans, so treat them as ballpark numbers. Without the nuts
-it's about 770 calories.
+semisweet chips and no nuts, so treat them as ballpark numbers.
 
 ## Notes
 

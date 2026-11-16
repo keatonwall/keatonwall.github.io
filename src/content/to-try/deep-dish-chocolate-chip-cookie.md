@@ -35,7 +35,7 @@ Saved in case the original page goes away. Makes 1 serving in a 10-ounce ramekin
 7. Bake 22 to 25 minutes, until the top is golden and the edges are set. The center will still look soft.
 8. Cool on a wire rack 10 minutes before serving.
 
-**How I make it:** as written, no changes.
+**How I make it:** as written, but no nuts.
 
 ### Notes
 

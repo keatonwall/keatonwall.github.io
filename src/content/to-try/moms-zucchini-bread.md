@@ -33,7 +33,7 @@ Saved in case the original page goes away. Makes 2 (8x4-inch) loaves, 24 serving
 6. Bake until a toothpick in the center of each loaf comes out clean, 40 to 60 minutes. Cool in the pans on a wire rack 20 minutes.
 7. Run a table knife around the edges, invert onto a wire rack, and let cool completely.
 
-**How I make it:** coconut oil instead of vegetable oil, 2 cups of sugar instead of 2¼, and no walnuts.
+**How I make it:** melted coconut oil instead of vegetable oil, 2 cups of sugar instead of 2¼, and no walnuts.
 
 ### Notes
 
