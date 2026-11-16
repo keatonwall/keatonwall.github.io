@@ -34,6 +34,8 @@ Saved in case the original page goes away. One bowl, no mixer, no chilling. Make
 7. Scoop about 1½ tablespoons of dough per cookie (a medium cookie scoop) and set them 2 inches apart on a baking sheet.
 8. Bake 7-10 minutes, until the edges are set and the middles still look puffy and a little underdone. Pulling them early keeps them soft.
 
+**How I bake them:** 9-11 minutes, until the tops are slightly golden brown.
+
 ### Notes
 
 - **Flour:** weigh it if you can. If you're using cups, stir or sift the flour first. Too much flour makes dry, crumbly dough and cookies that don't spread.

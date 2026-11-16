@@ -45,9 +45,8 @@ Makes about 24.
 ## Bake
 
 Scoop about 1½ tablespoons per cookie (a medium cookie scoop is perfect) and
-space them 2 inches apart. Bake **7-10 minutes**, until the edges are set and
-the middles still look puffy and a little underdone. That's the whole trick.
-Pulling them early is what keeps them soft.
+space them 2 inches apart. Bake **9-11 minutes**, until the tops are slightly
+golden brown.
 
 ## A few things that matter
 
