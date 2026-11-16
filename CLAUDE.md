@@ -64,6 +64,12 @@ recipes marked `tried` that have no write-up) and **To Try** (`/recipes/to-try`:
 saved recipes not yet tried). Writing (`/blog`) leaves out the `recipes` category.
 `/to-try` redirects to `/recipes/to-try` (astro.config.mjs).
 
+**Every recipe post gets a `## Macros` section** (Keaton, 2026-11-15): estimated
+calories, protein, carbs (with fiber) and fat per serving in a small table, with
+the serving size stated and a one-line note that the numbers are estimates.
+Compute from standard nutrition data for each ingredient plus labels for brand
+items; show the per-serving math basis (yield) in the text.
+
 ### Recipes to Try
 
 `/recipes/to-try` lists recipes Keaton wants to make. One frontmatter-only Markdown file

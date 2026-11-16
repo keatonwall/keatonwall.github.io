@@ -28,7 +28,8 @@ Makes 12 big cookies.
 - 1¾ cups all-purpose flour
 - ½ teaspoon baking soda
 - ½ teaspoon kosher salt (¼ teaspoon if you only have table salt)
-- 1 cup semisweet chocolate chips
+- ½ cup **Lily's** semi-sweet baking chips
+- ½ cup **Lily's** white chocolate baking chips
 
 ## Make the dough
 
@@ -47,6 +48,17 @@ Makes 12 big cookies.
 Weigh out **68g** of dough per cookie (that's 12 big ones) and
 space them 2 inches apart. Bake **9-11 minutes**, until the tops are slightly
 golden brown.
+
+## Macros
+
+Estimated per cookie (68g of dough, 12 cookies):
+
+| Calories | Protein | Carbs | Fat |
+|---|---|---|---|
+| ~250 | 3g | 35g (about 4g fiber) | 12g |
+
+These are estimates from standard nutrition data for each ingredient and the
+labels on the Lily's chips, so treat them as ballpark numbers.
 
 ## A few things that matter
 
