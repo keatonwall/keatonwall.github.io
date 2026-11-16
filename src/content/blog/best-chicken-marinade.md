@@ -34,3 +34,15 @@ this one.
 - **Flip once,** about halfway through.
 - Pull it when it hits **165F.** Go by temperature, not time. A probe
   thermometer makes it easy.
+
+## Macros
+
+Estimated per tenderloin (1 lb is about 8 tenderloins):
+
+| Calories | Protein | Carbs | Fat |
+|---|---|---|---|
+| ~90 | 13g | 1g | 4g |
+
+Most of the marinade gets tossed, so this counts only the bit that clings to
+the chicken (about ½ teaspoon of oil per tenderloin). These are estimates from
+standard nutrition data, so treat them as ballpark numbers.

@@ -92,6 +92,23 @@ the table.
 - Spritz **fresh lime juice** over the top right at the end.
 - Eat them right away, while they're hot. That's when they're best.
 
+## Macros
+
+Estimated per serving, assuming a standard 6 oz (raw) salmon fillet, a ½ cup
+serving of pilaf (the recipe makes about 6), and the asparagus split 4 ways:
+
+| | Calories | Protein | Carbs | Fat |
+|---|---|---|---|---|
+| Salmon (6 oz fillet) | ~355 | 34g | 0g | 22g |
+| Rice pilaf (½ cup) | ~150 | 4g | 24g (about 1g fiber) | 4g |
+| Grilled asparagus | ~125 | 6g | 5g (about 2g fiber) | 10g |
+| Shishito peppers | ~25 | 1g | 3g (about 1g fiber) | 1g |
+| **Full plate** | **~655** | **45g** | **32g** | **37g** |
+
+These are estimates from standard nutrition data for each ingredient (farmed
+Atlantic salmon), so treat them as ballpark numbers. Wild salmon runs leaner,
+closer to 280 calories and 13g fat per fillet.
+
 ## Notes for next time
 
 - The heavy lemon on the salmon, both the juice and the sliced lemons on top, is
