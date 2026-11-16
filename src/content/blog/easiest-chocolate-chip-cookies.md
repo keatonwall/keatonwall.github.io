@@ -18,7 +18,7 @@ Here's how I make it.
 
 ## Ingredients
 
-Makes about 24.
+Makes 12 big cookies.
 
 - ½ cup butter (salted or unsalted)
 - ½ cup granulated sugar
@@ -44,7 +44,7 @@ Makes about 24.
 
 ## Bake
 
-Scoop about 1½ tablespoons per cookie (a medium cookie scoop is perfect) and
+Weigh out **68g** of dough per cookie (that's 12 big ones) and
 space them 2 inches apart. Bake **9-11 minutes**, until the tops are slightly
 golden brown.
 
