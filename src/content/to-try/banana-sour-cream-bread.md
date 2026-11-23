@@ -31,7 +31,7 @@ Saved in case the original page goes away. Makes 4 (7x3-inch) loaves, 32 serving
 4. Add the flour, baking soda, and salt and mix until just combined. Stir in the walnuts and divide the batter evenly among the pans.
 5. Bake until a toothpick inserted in the center comes out clean, about 1 hour.
 
-**How I make it:** no walnuts. Everything else as written.
+**How I make it:** no walnuts; fold in 2 cups chocolate chips instead, and bake in three 9x5-inch pans (about 3 cups of batter each). Everything else as written.
 
 ### Notes
 
