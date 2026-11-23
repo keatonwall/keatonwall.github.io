@@ -44,9 +44,9 @@ Makes 3 (9x5-inch) loaves, about 3 cups of batter each, 30 slices.
 5. Add the flour, baking soda, and salt. Mix **just** until combined, then
    fold in the chocolate chips.
 6. Divide the batter between the pans, roughly **3 cups** per loaf.
-7. Bake until a toothpick in the center comes out clean. The original says
-   about 1 hour for small pans; the bigger 9x5 loaves take longer, so start
-   checking at 1 hour.
+7. Bake **60 minutes** uncovered, then lay a sheet of foil over the top so it
+   doesn't over-brown and bake about **15 minutes more** (75 minutes total),
+   until a toothpick in the center comes out clean.
 
 ## Macros
 
