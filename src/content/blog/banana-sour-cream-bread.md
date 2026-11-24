@@ -19,7 +19,8 @@ three 9x5 pans instead of four small ones.
 
 ## Ingredients
 
-Makes 3 (9x5-inch) loaves, about 3 cups of batter each, 30 slices.
+Makes 3 (9x5-inch) loaves, about 3 cups of batter each, 30 slices. Each baked
+loaf weighs about 900g.
 
 - 3¼ cups white sugar, divided
 - 3 teaspoons ground cinnamon, divided
@@ -50,7 +51,7 @@ Makes 3 (9x5-inch) loaves, about 3 cups of batter each, 30 slices.
 
 ## Macros
 
-Estimated per slice (30 slices, 10 per loaf):
+Estimated per slice (30 slices, 10 per loaf, about 90g each):
 
 | Calories | Protein | Carbs | Fat |
 |---|---|---|---|
